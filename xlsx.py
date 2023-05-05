@@ -7,6 +7,8 @@ from xlrd import xldate_as_tuple
 
 from moviepy.editor import *
 
+# 从xlsx中读取时间段然后截取视频段落
+
 # 时间字符串转换为秒
 def timeTransform(time_str):
 	#print(time_str)

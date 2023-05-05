@@ -16,34 +16,17 @@ def regular_xml(path,changeLabelDict):
     
 if __name__=="__main__":
     count=0
-    xmlDir=r'/DATACENTER4/ke.cao/xizang_testdata/1118/Annotations'
+    xmlDir=r'/home/kevin/桌面/ck'
     
     changeLabelDict={
-    'person_foreign':'person_foreign',
-    'motorbike_foreign':'car_foreign',
-    'car_foreign':'car_foreign',
-    'SUV_foreign':'car_foreign',
-    'bus_foreign':'car_foreign',
-    'microbus_foreign':'car_foreign',
-    'micorbus_foreign':'car_foreign',
-    'pickup_foreign':'car_foreign',
-    'truck_foreign':'car_foreign',
-    'tanker_foreign':'car_foreign',
-    'tractor_foreign':'car_foreign',
-    'engineeringvan_foreign':'car_foreign',
-    'tricycle_foreign':'car_foreign',
-    'person':'person',
-    'motorbike':'car',
     'car':'car',
-    'SUV':'car',
     'bus':'car',
-    'microbus':'car',
-    'pickup':'car',
-    'truck':'car',
-    'tanker':'car',
-    'tractor':'car',
-    'engineeringvan':'car',
-    'tricycle':'car',
+    'van':'car',
+    'others':'car',
+    'security':'other',
+    'blue':'blue',
+    'other':'other',
+    'door_open':'door_open',
     }
     print(xmlDir)
     allXmls=[x for x in FILES.get_sorted_files(xmlDir) if ".xml" in x]

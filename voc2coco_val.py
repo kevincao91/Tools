@@ -11,10 +11,36 @@ coco['categories'] = []
 category_set = dict()
 image_set = set()
 category_item_id = 0
-image_id = 20190000000
+image_id = 20200000000
 annotation_id = 0
 
 labelmapDict={
+    '24types': {
+    1: "person_foreign",
+    2: "motorbike_foreign",
+    3: "car_foreign",
+    4: "SUV_foreign",
+    5: "bus_foreign",
+    6: "microbus_foreign",
+    7: "pickup_foreign",
+    8: "truck_foreign",
+    9: "tanker_foreign",
+    10: "tractor_foreign",
+    11: "engineeringvan_foreign",
+    12: "tricycle_foreign",
+    13: "person",
+    14: "motorbike",
+    15: "car",
+    16: "SUV",
+    17: "bus",
+    18: "microbus",
+    19: "pickup",
+    20: "truck",
+    21: "tanker",
+    22: "tractor",
+    23: "engineeringvan",
+    24: "tricycle",
+    },
     '12types': {
     1: "person_foreign",
     2: "motorbike_foreign",
@@ -191,7 +217,7 @@ def parseXmlFiles(xml_path):
                     addAnnoItem(object_name, current_image_id, current_category_id, bbox )
 if __name__ == '__main__':
     
-    labelmap = labelmapDict['4types']
+    labelmap = labelmapDict['24types']
     
     jsonDir = './COCOJson'
     FILES.mkdir(jsonDir)
