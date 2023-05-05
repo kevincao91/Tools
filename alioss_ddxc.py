@@ -3,8 +3,8 @@ import json
 import oss2
 # 阿里云账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM用户进行API访问或日常运维，请登录RAM控制台创建RAM用户。
 
-access_key_id = 'LTAI5t7ZSH4trjX33Q2A6B83'
-access_key_secret = 'BeJGUwQdCRbAz26eEHYxjc4vJp8VoA'
+access_key_id = 'xxxx'
+access_key_secret = 'xxxx'
 bucket_name = 'cidi-ai-cloud-test1'
 endpoint = 'https://oss-cn-shanghai.aliyuncs.com'
 
